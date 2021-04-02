@@ -78,8 +78,10 @@ public class ChatDetailActivity extends AppCompatActivity {
                     messages.setMessageId(dataSnapshot.getKey());
 
                     messagesArrayList.add(messages);
+                    binding.chatsRecyclerView.smoothScrollToPosition(messagesArrayList.size()-1);
                 }
                 chatsAdapter.notifyDataSetChanged();
+
             }
 
             @Override

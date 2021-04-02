@@ -2,7 +2,12 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-
+    <item
+        android:id="@+id/search_bar"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:title="Search User"
+        app:showAsAction="always"
+        app:actionViewClass="android.widget.SearchView" />
     <item
         android:id="@+id/chatRoom"
         android:title="Chat Room"
@@ -16,12 +21,7 @@
         android:title="Log out"
         />
 
-    <item
-        android:id="@+id/search_bar"
-        android:icon="@drawable/ic_baseline_search_24"
-        android:title="Search User"
-        app:showAsAction="always"
-        app:actionViewClass="android.widget.SearchView" />
+
 
 
 </menu>
